@@ -1,0 +1,381 @@
+@media (min-width: 575.98px) {
+    .mob-sidebar {
+        display: none;
+    }
+    .card:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+        transform: translateY(-15px);
+        transition: 200ms;
+        position: relative;
+        z-index: 10000;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container-fluid {
+        padding-bottom: 50px
+    }
+   
+}
+
+.mob-sidebar li {
+    display: inline-block;
+}
+
+.mob-sidebar {
+    border-top: 1px solid white;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: 1s;
+}
+
+.sidebar {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border-right: 1px solid rgb(204, 203, 203);
+}
+
+.swap-s,
+.swap-t {
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid white;
+    border-bottom: none;
+    transition: 300ms;
+}
+
+.swap-s:hover,
+.swap-t:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.swap-active {
+    background-color: white;
+    color: black;
+}
+
+.feather {
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+    color: white
+}
+
+.sidebar .nav-link.active {
+    color: white;
+    font-size: 20px
+}
+
+.sidebar .nav-link.active .feather {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 10px
+}
+
+.form-search input,
+.form-search select {
+    background-color: rgba(0, 0, 0, .8);
+    border-end-end-radius: 0px;
+    color: white;
+}
+
+.form-search input:focus {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+}
+
+.form-search select {
+    border-start-start-radius: 0px;
+    border-left: none;
+}
+
+.form-search select:focus {
+    box-shadow: none;
+}
+
+body {
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+}
+
+.player,
+.list {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.track-branch {
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+.list li,
+.list-songs li {
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    border-color: white transparent;
+}
+
+.list-songs li:hover {
+    background-color: #19223d
+}
+
+.list-songs {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.now-playing {
+    font-size: 1rem;
+}
+
+.track-name {
+    font-size: 3rem;
+}
+
+.track-artist {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.playpause,
+.icon {
+    filter: brightness(0) invert(1);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Modify the appearance of the slider */
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+/* Modify the appearance of the slider thumb */
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 60%;
+}
+
+.volume_slider {
+    width: 30%;
+}
+
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
+
+#name_update {
+    background-color: inherit;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: inherit
+}
+
+#name_update:focus {
+    background-color: inherit;
+    color: inherit;
+    box-shadow: none;
+    border: none;
+}
+
+.btn-upd {
+    width: 90px;
+    border: 1px solid white;
+    color: white;
+    transition: 400ms;
+}
+
+.btn-upd:hover {
+    background-color: white;
+    color: black;
+}
+
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity .2s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.repeat-true {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 5px
+}
+
+.file-input {
+    background-color: rgba(0, 0, 0, .5);
+    color: white
+}
+
+.file-input:focus {
+    background-color: white;
+    color: black;
+    box-shadow: none
+}
+
+.btn-file {
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 30%;
+}
+
+.btn-file:hover {
+    background-color: white;
+    color: black;
+}
+
+.playlist-play:hover .playlist-play {
+    background-color: white;
+    color: black;
+}
+
+.list-songs .list-group .list-playlist:hover {
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.pagination .page-item .page-link {
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: white;
+    color: black;
+    border: 1px solid white
+}
